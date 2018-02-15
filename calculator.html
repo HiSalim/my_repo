@@ -12,12 +12,19 @@ num.value = Math.pow(num.value, 3);
 
 }
 
+
+function sin(){
+	var num = document.getElementById("n1");
+	num.value = Math.sin(num.value);
+}
+
 /* Se incorpora otra función ya que en el enunciado no dice nada de reutilizar
 la función anterior (que sería lo más eficiente y lógico) */
 function pow4(){
 	var num = document.getElementById("n1");
 	num.value = Math.pow(num.value, 4);
 }
+
 
 </script>
 
@@ -32,7 +39,11 @@ Number:
 <input type="text" id="n1"><p>
 
 <button onclick="cube()"> x^3 </button>
+
+<button onclick="sin()">sin(x)</button>
+
 <button onclick="pow4()">x^4</button>
+
 
 </body>
 
